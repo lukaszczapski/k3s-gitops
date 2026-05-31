@@ -1,3 +1,7 @@
+global:
+  storageClass: "longhorn"
+  imageRegistry: "mirror.gcr.io"  # Wymuszenie globalne dla Bitnami
+
 image:
   registry: mirror.gcr.io
   repository: bitnami/wordpress
@@ -9,9 +13,6 @@ mariadb:
   primary:
     persistence:
       storageClass: "longhorn"
-
-global:
-  storageClass: "longhorn"
 
 ingress:
   enabled: false
