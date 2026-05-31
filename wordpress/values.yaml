@@ -1,14 +1,14 @@
 global:
   storageClass: "longhorn"
-  imageRegistry: "mirror.gcr.io"  # Wymuszenie globalne dla Bitnami
+  imageRegistry: "daocloud.io"  # <-- Zmiana mirroru na pełny mirror Docker Huba
 
 image:
-  registry: mirror.gcr.io
+  registry: daocloud.io
   repository: bitnami/wordpress
 
 mariadb:
   image:
-    registry: mirror.gcr.io
+    registry: daocloud.io
     repository: bitnami/mariadb
   primary:
     persistence:
