@@ -1,8 +1,11 @@
 global:
   storageClass: "longhorn"
+  imageRegistry: "mirror.gcr.io"  # <-- Ten parametr zmusi K3s do pobrania obrazów z mirrora Google zamiast z Docker Huba!
+
 mariadb:
   primary:
     persistence:
       storageClass: "longhorn"
+
 ingress:
   enabled: false
